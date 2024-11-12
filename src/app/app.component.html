@@ -1,0 +1,61 @@
+<header>
+  <nav class="navbar navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
+      <!-- Logo or App name -->
+      <a class="navbar-brand" href="#">Fullstack App</a>
+
+      <!-- Display token if logged in -->
+      <div *ngIf="logedin" class="left-align">
+        <pre class="text-muted" style="font-size: 12px;">Token: {{ token }}</pre>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="d-flex">
+        <button class="btn btn-outline-primary me-2" routerLink="/users">Users</button>
+        <button class="btn btn-outline-success me-2" routerLink="/login" *ngIf="!logedin">Login</button>
+        <button class="btn btn-danger" *ngIf="logedin" (click)="logout()">Logout</button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<router-outlet></router-outlet>
+
+<div *ngIf="this.mainpage" class="container mt-5">
+  <h2 class="text-center mb-4">Dashboard</h2>
+  <div class="row d-flex justify-content-center">
+
+    <div class="col-12 col-md-5 col-lg-3 mb-3">
+      <button 
+        class="btn btn-primary w-100 py-3" 
+        routerLink="/users">
+        <i class="bi bi-people"></i> Users
+      </button>
+    </div>
+
+    <div class="col-12 col-md-5 col-lg-3 mb-3">
+      <button 
+        class="btn btn-success w-100 py-3" 
+        routerLink="/decode-jwt">
+        <i class="bi bi-file-earmark-lock"></i> Decode JWT Token
+      </button>
+    </div>
+
+    <div class="col-12 col-md-5 col-lg-3 mb-3">
+      <button 
+        class="btn btn-warning w-100 py-3" 
+        routerLink="/user-role">
+        <i class="bi bi-person-badge"></i> Users with Role
+      </button>
+    </div>
+
+    <div class="col-12 col-md-5 col-lg-3 mb-3">
+      <button 
+        class="btn btn-danger w-100 py-3" 
+        routerLink="/user-date">
+        <i class="bi bi-calendar-date"></i> Users by Date
+      </button>
+    </div>
+
+  </div>
+</div>

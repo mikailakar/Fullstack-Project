@@ -1,0 +1,50 @@
+/* Custom Navbar styles */
+.navbar {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #007bff !important;
+}
+
+.navbar .ms-auto {
+  margin-right: 1rem;
+}
+
+button {
+  margin-left: 10px;
+}
+
+pre {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  color: #666;
+}
+
+.left-align {
+  width: 25vw;
+  float: left;
+  text-align: left;
+  margin-right: auto;
+}
+
+@media (min-width: 620px) {
+  .left-align {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 750px) {
+  .left-align {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 920px) {
+  .left-align {
+    width: 60vw;
+  }
+}
