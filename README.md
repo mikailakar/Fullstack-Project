@@ -97,7 +97,7 @@ Here's a list of the key endpoints used in this project:
 
 ## Screenshots
 ### 1. Main Page
-![Main Page](https://)
+![Main Page](./screenshots/main-menu)
 
 ### 2. Users List
 ![Users List](https://)
