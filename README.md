@@ -100,7 +100,7 @@ Here's a list of the key endpoints used in this project:
 ![Main Page](./screenshots/main-menu.png)
 
 ### 2. Users List
-![Users List](https://)
+![Users List](./screenshots/users.png)
 
 ### 3. JWT Token Decoding
-![Decode JWT](https://)
+![Decode JWT](./screenshots/decode-jwt.png)
