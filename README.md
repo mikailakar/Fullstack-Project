@@ -59,7 +59,7 @@ Make sure you have the following installed on your machine:
    - Configure `environment.ts` and `environment.prod.ts` files inside the `src/environments` folder.
    - Add your API URL to connect with the backend:
 
-   ```bash
+   ```typescript
    export const environment = {  
      production: false,  
      apiUrls: {  
