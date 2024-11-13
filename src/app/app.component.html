@@ -1,15 +1,10 @@
 <header>
   <nav class="navbar navbar-light bg-light shadow-sm">
     <div class="container-fluid">
-      <!-- Logo or App name -->
       <a class="navbar-brand" href="#">Fullstack App</a>
-
-      <!-- Display token if logged in -->
       <div *ngIf="logedin" class="left-align">
         <pre class="text-muted" style="font-size: 12px;">Token: {{ token }}</pre>
       </div>
-
-      <!-- Navigation buttons -->
       <div class="d-flex">
         <button class="btn btn-outline-primary me-2" routerLink="/users">Users</button>
         <button class="btn btn-outline-success me-2" routerLink="/login" *ngIf="!logedin">Login</button>
