@@ -10,7 +10,6 @@ This is the **Angular frontend** for the [Backend Project](https://github.com/mi
 - [Getting Started](#getting-started)
   - [Installation](#installation)
   - [Running the Application](#running-the-application)
-- [Environment Configuration](#environment-configuration)
 - [API Endpoints](#api-endpoints)
 - [Screenshots](#screenshots)
 
